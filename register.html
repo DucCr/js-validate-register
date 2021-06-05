@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Resister</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Resister</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input 
+                    type="text" 
+                    placeholder="eg : JiJi" 
+                    id="username" 
+                    onClick="handlerUsername()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email Address</label>
+                <input 
+                    placeholder="eg : JiJi@gmail.com" 
+                    id="email" 
+                    onClick="handlerEmail()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input 
+                    type="password" 
+                    placeholder="********" 
+                    id="password"
+                    onClick="handlerPassword()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="username">Confirm Password</label>
+                <input 
+                    type="password" 
+                    placeholder="********" 
+                    id="password2"
+                    onClick="handlerRePassword()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+       
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
